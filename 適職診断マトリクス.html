@@ -1,0 +1,772 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>CAREER SELF-DISCOVERY</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root {
+  /* Layout: concept copy beside a stacked 3-layer model. Results reuse the same layers as pastel panels (認識 blue, 動機 pink, 欲求 amber, 処方箋 green) under a hero with radar and quadrant map. */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --ink: #1b2640;
+  --on-ink: #f8fafc;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --frame: #94a3b8;
+  --q1: #10b981;
+  --q2: #f59e0b;
+  --q3: #3b82f6;
+  --q4: #8b5cf6;
+  --focus: #3b82f6;
+  --l1-bg: #eff6ff; --l1-ink: #2563eb;
+  --l2-bg: #fdf2f8; --l2-ink: #db2777;
+  --l3-bg: #fefce8; --l3-ink: #b45309;
+  --l4-bg: #ecfdf5; --l4-ink: #059669;
+  --r1: 14px; --r2: 10px; --r3: 8px;
+  --font-display: "Plus Jakarta Sans", "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f172a; --surface: #1e293b; --ink: #f1f5f9; --on-ink: #0f172a; --muted: #94a3b8; --line: #334155; --frame: #64748b;
+    --q1: #34d399; --q2: #fbbf24; --q3: #60a5fa; --q4: #a78bfa; --focus: #60a5fa;
+    --l1-bg: #172554; --l1-ink: #93c5fd; --l2-bg: #500724; --l2-ink: #f9a8d4; --l3-bg: #451a03; --l3-ink: #fde047; --l4-bg: #064e3b; --l4-ink: #6ee7b7;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f172a; --surface: #1e293b; --ink: #f1f5f9; --on-ink: #0f172a; --muted: #94a3b8; --line: #334155; --frame: #64748b;
+  --q1: #34d399; --q2: #fbbf24; --q3: #60a5fa; --q4: #a78bfa; --focus: #60a5fa;
+  --l1-bg: #172554; --l1-ink: #93c5fd; --l2-bg: #500724; --l2-ink: #f9a8d4; --l3-bg: #451a03; --l3-ink: #fde047; --l4-bg: #064e3b; --l4-ink: #6ee7b7;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+  padding-block: 28px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1000px; margin: 0 auto; }
+h1, h2, h3, h4, p { margin: 0; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(24px, 5.5vw, 36px); line-height: 1.18; letter-spacing: -0.01em; }
+h2 { font-size: 22px; line-height: 1.45; font-weight: 700; text-wrap: balance; }
+h3 { font-size: 17px; line-height: 1.5; font-weight: 700; text-wrap: balance; }
+h4 { font-size: 15px; line-height: 1.55; font-weight: 700; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--muted); }
+.muted { color: var(--muted); }
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* intro */
+.intro { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
+@media (min-width: 820px) { .intro { grid-template-columns: 1fr 1fr; gap: 56px; } }
+.intro-copy { display: flex; flex-direction: column; gap: 16px; min-width: 0; padding-top: 8px; }
+.subtitle { font-size: 22px; font-weight: 700; line-height: 1.5; }
+.lead { font-size: 16px; max-width: 30em; }
+.caption { font-size: 13px; color: var(--muted); }
+.startrow { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 8px; }
+.model { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+
+/* layers */
+.layer { border-radius: var(--r1); padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.layer.l1 { background: var(--l1-bg); --lc: var(--l1-ink); }
+.layer.l2 { background: var(--l2-bg); --lc: var(--l2-ink); }
+.layer.l3 { background: var(--l3-bg); --lc: var(--l3-ink); }
+.layer.l4 { background: var(--l4-bg); --lc: var(--l4-ink); }
+.lhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.lhead h3 { color: var(--ink); }
+.lbadge { font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: color-mix(in srgb, var(--lc) 22%, transparent); color: var(--lc); flex: none; }
+.llead { font-size: 14px; color: var(--ink); }
+.arrow { text-align: center; color: var(--muted); font-size: 18px; line-height: 1.2; }
+.out-title { text-align: center; font-weight: 700; color: var(--lc); font-size: 18px; letter-spacing: 0.04em; }
+.out-sub { text-align: center; font-weight: 700; font-size: 15px; }
+.card { background: var(--surface); border-radius: var(--r2); padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.card p { font-size: 15px; }
+.card .eyebrow { color: var(--lc); }
+.cards2 { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 760px) { .cards2 { grid-template-columns: 1fr 1fr; } }
+.l-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 760px) { .l-grid { grid-template-columns: 1fr 1fr; } }
+
+.johari { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; min-width: 0; }
+.jc { background: var(--surface); border-radius: var(--r2); padding: 10px 12px; display: flex; flex-direction: column; gap: 0; position: relative; min-width: 0; }
+.jc b { color: var(--l1-ink); font-size: 17px; line-height: 1.5; }
+.jc small { color: var(--muted); font-size: 12px; line-height: 1.5; }
+.jc.on { outline: 2.5px solid var(--l1-ink); outline-offset: -2.5px; }
+.here { margin-top: 6px; font-size: 11px; font-weight: 700; color: var(--surface); background: var(--l1-ink); padding: 0 8px; border-radius: 999px; align-self: flex-start; }
+
+.freud { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; min-width: 0; }
+.fc { background: var(--surface); border-radius: var(--r2); padding: 10px 8px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0; position: relative; min-width: 0; }
+.fc b { color: var(--l2-ink); font-size: 17px; line-height: 1.5; }
+.fc small { color: var(--l2-ink); font-size: 11px; line-height: 1.5; }
+.fc .fv { font-family: var(--font-mono); font-size: 14px; margin-top: 4px; color: var(--ink); }
+.fc.on { outline: 2.5px solid var(--l2-ink); outline-offset: -2.5px; }
+.fc .here { background: var(--l2-ink); }
+
+.pyr { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 0; }
+.pyr div { background: var(--surface); color: var(--ink); border-radius: var(--r3); padding: 6px 10px; text-align: center; font-size: 14px; font-weight: 500; width: var(--w); line-height: 1.5; }
+.pyr div.on { background: var(--l3-ink); color: var(--surface); font-weight: 700; }
+
+.ladder { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.ladder li { display: flex; flex-direction: column; padding: 8px 10px; border: 1.5px solid var(--line); border-radius: var(--r3); color: var(--muted); min-width: 0; }
+.ladder li b { font-size: 14px; }
+.ladder li small { font-size: 11px; line-height: 1.4; }
+.ladder li.on { background: var(--l2-ink); border-color: var(--l2-ink); color: var(--surface); }
+
+/* form */
+.panel { background: var(--surface); border-radius: var(--r1); padding: 24px; margin-top: 40px; scroll-margin-top: 16px; }
+@media (max-width: 520px) { .panel { padding: 18px 14px; } }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label { font-weight: 700; }
+.field input[type="text"] { font: inherit; width: 100%; padding: 12px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); border-radius: var(--r3); }
+.gnote { font-size: 14px; color: var(--muted); }
+.group { margin-top: 32px; }
+.scale-hint { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); margin-top: 8px; }
+fieldset.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 18px 0 16px; min-width: 0; }
+fieldset.q.missing { background: color-mix(in srgb, var(--q2) 12%, transparent); outline: 2px solid var(--q2); outline-offset: -2px; border-radius: var(--r3); }
+fieldset.q legend { padding: 0; margin-bottom: 10px; font-weight: 500; line-height: 1.7; }
+.scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.scale label { position: relative; display: block; }
+.scale input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.scale span { display: grid; place-items: center; height: 46px; border: 1.5px solid var(--line); border-radius: var(--r3); background: var(--bg); color: var(--muted); font-family: var(--font-mono); transition: background-color .12s, color .12s; }
+.scale input:checked + span { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.scale input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+.submit-row { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.progress { flex: 1 1 140px; min-width: 120px; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.progress i { display: block; height: 100%; width: 0; background: var(--ink); transition: width .15s; }
+.btn { font: 700 16px var(--font-body); min-height: 48px; padding: 10px 22px; border: 2px solid var(--ink); background: var(--ink); color: var(--on-ink); border-radius: var(--r3); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); }
+.msg { font-size: 14px; color: var(--q2); min-height: 1.5em; margin-top: 8px; font-weight: 500; }
+
+/* result */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chip { font: 500 14px var(--font-body); display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; min-height: 40px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; cursor: pointer; max-width: 100%; }
+.chip[aria-pressed="true"] { border-color: var(--ink); font-weight: 700; }
+.chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--qc); flex: none; }
+.hero { background: var(--surface); border-radius: var(--r1); padding: 24px; margin-top: 20px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+@media (max-width: 520px) { .hero { padding: 18px 14px; } }
+.rtitle { font-family: var(--font-display); font-weight: 800; font-size: clamp(24px, 6vw, 34px); line-height: 1.3; letter-spacing: 0.01em; }
+.qbadge { align-self: flex-start; font-size: 12px; font-weight: 700; padding: 1px 12px; border-radius: 999px; color: var(--qc); background: color-mix(in srgb, var(--qc) 16%, var(--surface)); border: 1px solid color-mix(in srgb, var(--qc) 40%, transparent); }
+.vlead { font-size: 18px; font-weight: 700; line-height: 1.5; text-wrap: balance; }
+.note { font-size: 14px; padding: 10px 12px; border: 1.5px dashed var(--line); border-radius: var(--r3); color: var(--muted); }
+.figs { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 6px; }
+@media (min-width: 860px) { .figs { grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; } }
+.fig { margin: 0; min-width: 0; }
+.fig svg { display: block; width: 100%; height: auto; max-width: 100%; }
+.fig figcaption { font-size: 12px; color: var(--muted); text-align: center; padding-top: 4px; }
+svg .rgrid { fill: none; stroke: var(--line); stroke-width: 1; }
+svg .raxis { stroke: var(--line); stroke-width: 1; }
+svg .rarea { fill: color-mix(in srgb, var(--qc) 20%, transparent); stroke: var(--qc); stroke-width: 3; stroke-linejoin: round; }
+svg .rvtx { fill: var(--qc); stroke: var(--surface); stroke-width: 2; }
+svg .rl { fill: var(--ink); font: 500 13px var(--font-body); }
+
+/* クリアで濁りのないパステルトーンの象限マップ */
+svg .pane.p1 { fill: #ecfdf5; }
+svg .pane.p2 { fill: #fffbeb; }
+svg .pane.p3 { fill: #eff6ff; }
+svg .pane.p4 { fill: #f5f3ff; }
+svg .band { fill: #64748b; opacity: .04; }
+svg .frame { stroke: var(--line); stroke-width: 2; }
+svg .mull { stroke: #cbd5e1; stroke-width: 2; stroke-dasharray: 4 4; }
+svg .ql { fill: var(--muted); font: 700 12px var(--font-body); }
+svg .ax { fill: var(--muted); font: 500 12px var(--font-body); }
+svg .dlabel { fill: var(--ink); font: 700 13px var(--font-body); paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
+
+.scores { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
+.srow .sh { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
+.track { height: 8px; background: var(--line); border-radius: 4px; margin-top: 5px; overflow: hidden; }
+.track i { display: block; height: 100%; background: var(--qc, var(--ink)); border-radius: 4px; }
+.track i.warn { background: var(--q2); }
+.aux-h { margin-top: 8px; font-size: 13px; color: var(--muted); font-weight: 700; }
+.gaplist { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 760px) { .gaplist { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); } }
+.pair { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 14px; }
+.pair b { font-family: var(--font-mono); font-weight: 500; }
+.sub { font-size: 14px; font-weight: 700; margin-top: 4px; }
+.actions { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.actions li { background: var(--surface); border-radius: var(--r2); padding: 12px 16px 12px 46px; position: relative; min-width: 0; font-size: 15px; }
+.actions li::before { content: ""; position: absolute; left: 16px; top: 18px; width: 16px; height: 16px; border: 2px solid var(--l4-ink); border-radius: 4px; }
+.btnrow { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+#copyarea { width: 100%; min-height: 140px; margin-top: 12px; font: 14px/1.6 var(--font-body); padding: 12px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: var(--r3); }
+
+details { background: var(--surface); border-radius: var(--r2); padding: 4px 16px; margin-top: 32px; }
+details summary { cursor: pointer; font-weight: 700; padding: 10px 0; min-height: 44px; }
+details .inner { padding: 4px 0 16px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; }
+.hyp { font-size: 12px; color: var(--muted); }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; min-width: 560px; width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 700; color: var(--muted); font-size: 12px; letter-spacing: 0.06em; }
+.fine { font-size: 13px; color: var(--muted); margin-top: 32px; max-width: 44em; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <header id="viewForm">
+    <div class="intro">
+      <div class="intro-copy">
+        <p class="eyebrow">適職診断</p>
+        <h1>CAREER<br>SELF-DISCOVERY</h1>
+        <p class="subtitle">自分を知るための適職診断</p>
+        <p class="lead">能力、意欲、無意識の動機、欲求の構造から、自分の働き方の特性を可視化する。</p>
+        <p class="caption">12問・約2分。気になる仕事ごとに何度でも診断でき、結果は同じ地図に並べて比べられます。</p>
+        <div class="startrow"><button type="button" class="btn" id="startBtn">診断をはじめる</button></div>
+      </div>
+      <div class="model" id="model" aria-label="診断の構造"></div>
+    </div>
+
+    <form id="form" class="panel" novalidate>
+      <div class="field">
+        <label for="jobName">診断する仕事</label>
+        <input type="text" id="jobName" name="jobName" maxlength="30" autocomplete="off" placeholder="例: 今の営業職 / 目指しているUIデザイナー">
+        <p class="gnote">まだ経験のない仕事は、似た経験を思い出して答えてください。</p>
+      </div>
+      <div id="qs"></div>
+      <div class="submit-row">
+        <button type="submit" class="btn" id="submitBtn">結果を見る</button>
+        <button type="button" class="btn ghost" id="sampleBtn">サンプルを入れる</button>
+        <div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+        <span class="num muted" id="pcount" aria-live="polite">0 / 12</span>
+      </div>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </header>
+
+  <main id="viewResult" hidden>
+    <p class="eyebrow">CAREER SELF-DISCOVERY / 診断結果</p>
+    <div class="chips" id="chips" role="group" aria-label="診断した仕事"></div>
+    <div id="resultBody"></div>
+  </main>
+
+  <details id="logic">
+    <summary>判定のしくみ</summary>
+    <div class="inner">
+      <p><b>6つのスコア。</b>自発的意欲は仕事そのものへの関心(A1〜A3)の平均です。能力・遂行力はB1とB3の平均、他者評価との一致は周囲の評価(B2)の高さと自己評価との近さを6対4で合わせた値です。内的欲求の充足は意欲と「100−エネルギー消費度」の平均、責任感・周囲の期待度はD2とE1の平均、自己実現度はやりたい度とできる度の幾何平均です。</p>
+      <p><b>4つの象限。</b>やりたい度(A1〜A3の平均)とできる度(B1〜B3の平均)を0〜100に換算し、50を境にします。50±8は境界ゾーンで、どちらの象限にも入りうるものとして扱います。</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>象限</th><th>条件</th><th>象限の中の分かれ方</th></tr></thead>
+          <tbody>
+            <tr><td>① 天職・自己実現</td><td>やりたい≧50 かつ できる≧50</td><td>エネルギー消費度の平均が3.5以上なら「消費が高め」</td></tr>
+            <tr><td>② 頼れる実力・要調整</td><td>やりたい&lt;50 かつ できる≧50</td><td>エネルギー消費度の平均が3.5以上なら「余白と充電を最優先」、未満なら「次の関心を探す」</td></tr>
+            <tr><td>③ 好奇心と伸びしろ</td><td>やりたい≧50 かつ できる&lt;50</td><td>E1が4以上でR1が2以下なら「理想に惹かれ解像度アップ」、B4が4以上なら「伸びしろ・ポテンシャル」、B4が2以下なら「活かし方を工夫」、それ以外は「探求とトライアル」</td></tr>
+            <tr><td>④ 別領域への合図</td><td>やりたい&lt;50 かつ できる&lt;50</td><td>B4が4以上なら「アプローチ見直し」、それ以外は「別領域へ目を向ける好機」</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><b>第1層 ジョハリの窓。</b>自己評価(B1)と周囲の評価(B2)がそれぞれ4以上かどうかで、開放・盲点・秘密・未知に分けます。ズレの点検は、2段階以上の差、評価は高いのに自力度(B3)が低い、肩書きへの惹かれが強いのに関心が低い、関心は高いのに現実が見えていない、責任感(D2)が強い、のいずれかで表示します。最大3件です。</p>
+      <p><b>第2層 フロイト。</b>エスは自発的意欲、自我はR1・B3・B4の平均、超自我は責任感・周囲の期待度の値です。最も高く、かつ40以上のものを「優勢」とします。動機づけの段階は、D2が4以上なら取り入れ的、E1が4以上で関心が低ければ外的、関心が高ければ内発的と読みます。フローはA1とB1の組み合わせから読みます。</p>
+      <p><b>第3層 マズロー。</b>象限の中の分かれ方ごとに、いま動いていそうな欲求の候補を対応させています。自己効力感はB1〜B4の平均、エネルギーバランスはD1とB1・B2の平均から読みます。</p>
+      <p class="hyp">心理学の視点は、断定ではなく「そう読める場合がある」という仮説として添えています。医学的・心理学的な診断ではありません。</p>
+    </div>
+  </details>
+
+  <p class="fine">この診断は自分の状態を点検するための材料です。眠れない、食欲が落ちる、出勤が極端につらいといった状態が続く場合は、産業医や医療機関などの専門家に相談してください。回答はこのブラウザ内にだけ保存されます。</p>
+</div>
+
+<script>
+// LOGIC-START
+const QUESTIONS = [
+  { id: 'A1', g: 'feel', t: 'この仕事の作業そのものに、時間を忘れて没頭することがある。' },
+  { id: 'A2', g: 'feel', t: '報酬や評価がなくても、この仕事に関することを自分から調べたり試したりしたくなる。' },
+  { id: 'A3', g: 'feel', t: 'うまくいかない日があっても、「もう少し工夫してみたい」と思える。' },
+  { id: 'E1', g: 'view', t: 'この仕事の肩書きや、周りからどう見られるか（ステータス）に惹かれている。' },
+  { id: 'R1', g: 'view', t: '華やかな面だけでなく、地味な作業や大変な場面の実態も具体的に知っている。' },
+  { id: 'D1', g: 'body', t: '仕事のあと、エネルギーを使い切ってしっかり休息を取りたくなる。' },
+  { id: 'D2', g: 'body', t: '「周囲の期待に応えたい」「役割を果たしたい」という責任感が行動の大きな原動力になっている。' },
+  { id: 'D3', g: 'body', t: '休み明けや仕事の前日・直前に、少し気持ちの切り替えにエネルギーが必要になる。' },
+  { id: 'B1', g: 'skill', t: '同じ時間で、周りの人より早く、または質高く仕上げられる。' },
+  { id: 'B2', g: 'skill', t: '上司・同僚・顧客から、仕事ぶりや成果を評価されることが多い。' },
+  { id: 'B3', g: 'skill', t: '指示や手厚いフォローがなくても、自分の判断と力で成果を出せる。' },
+  { id: 'B4', g: 'skill', t: '失敗しても、練習や経験を重ねれば改善できる手応えがある。' }
+];
+const BAND = 8;
+const pct = m => Math.round((m - 1) / 4 * 100);
+const mean = a => a.reduce((s, x) => s + x, 0) / a.length;
+
+function diagnose(a) {
+  const A = mean([a.A1, a.A2, a.A3]);
+  const D = mean([a.D1, a.D2, a.D3]);
+  const B = mean([a.B1, a.B2, a.B3]);
+  const want = pct(A), can = pct(B), drain = pct(D), growth = pct(a.B4);
+  const quad = want >= 50 ? (can >= 50 ? 1 : 3) : (can >= 50 ? 2 : 4);
+  const border = [];
+  if (Math.abs(want - 50) <= BAND) border.push('want');
+  if (Math.abs(can - 50) <= BAND) border.push('can');
+  let variant;
+  if (quad === 1) variant = D >= 3.5 ? 'q1-drain' : 'q1';
+  else if (quad === 2) variant = D >= 3.5 ? 'q2-hot' : 'q2-calm';
+  else if (quad === 3) variant = (a.E1 >= 4 && a.R1 <= 2) ? 'q3-dream' : a.B4 >= 4 ? 'q3-grow' : a.B4 <= 2 ? 'q3-mismatch' : 'q3-open';
+  else variant = a.B4 >= 4 ? 'q4-recover' : 'q4-none';
+  const gaps = [];
+  if (a.B3 <= 2 && Math.max(a.B1, a.B2) >= 4) gaps.push('supported');
+  if (a.B2 - a.B1 >= 2) gaps.push('blind');
+  if (a.B1 - a.B2 >= 2) gaps.push('overself');
+  if (a.E1 >= 4 && A < 3) gaps.push('outer');
+  if (A >= 3.5 && a.R1 <= 2) gaps.push('image');
+  if (a.D2 >= 4 && variant !== 'q2-hot') gaps.push('duty');
+  return { want, can, drain, growth, quad, variant, border, gaps: gaps.slice(0, 3), self: a.B1, other: a.B2 };
+}
+
+function profile(a) {
+  const want = pct(mean([a.A1, a.A2, a.A3]));
+  const can = pct(mean([a.B1, a.B2, a.B3]));
+  const drain = pct(mean([a.D1, a.D2, a.D3]));
+  const duty = pct(mean([a.D2, a.E1]));
+  const axes = [
+    { k: 'will', label: '自発的意欲', v: want },
+    { k: 'skill', label: '能力・遂行力', v: pct(mean([a.B1, a.B3])) },
+    { k: 'eval', label: '他者評価との一致', v: Math.round(0.6 * pct(a.B2) + 0.4 * (100 - Math.abs(a.B1 - a.B2) * 25)) },
+    { k: 'inner', label: '内的欲求の充足', v: Math.round((want + 100 - drain) / 2) },
+    { k: 'duty', label: '責任感・周囲の期待度', v: duty },
+    { k: 'self', label: '自己実現度', v: Math.round(Math.sqrt(want * can)) }
+  ];
+  const freud = { es: want, ego: pct(mean([a.R1, a.B3, a.B4])), sup: duty };
+  const top = Object.entries(freud).sort((x, y) => y[1] - x[1])[0];
+  return { axes, freud, dom: top[1] >= 40 ? top[0] : 'none' };
+}
+function johari(a) {
+  const s = a.B1 >= 4, o = a.B2 >= 4;
+  return s && o ? 'open' : o ? 'blind' : s ? 'hidden' : 'unknown';
+}
+function maslowLevels(variant) {
+  return {
+    'q1': ['self'], 'q1-drain': ['self', 'safety'], 'q2-hot': ['esteem', 'safety'], 'q2-calm': ['esteem'],
+    'q3-dream': ['belong', 'esteem'], 'q3-grow': ['esteem', 'self'], 'q3-mismatch': ['esteem'], 'q3-open': ['esteem'],
+    'q4-recover': ['safety'], 'q4-none': ['safety']
+  }[variant];
+}
+
+function psych(a) {
+  const A = mean([a.A1, a.A2, a.A3]);
+  const motive = a.D2 >= 4 ? 'intro' : (a.E1 >= 4 && A < 3.5) ? 'ext' : A >= 3.5 ? 'int' : 'mix';
+  const eff = pct(mean([a.B1, a.B2, a.B3, a.B4]));
+  const effLv = eff >= 63 ? 'high' : eff <= 37 ? 'low' : 'mid';
+  const flow = a.A1 >= 4 && a.B1 >= 4 ? 'flow' : a.A1 >= 4 && a.B1 <= 2 ? 'anxiety' : a.A1 <= 2 && a.B1 >= 4 ? 'bore' : 'none';
+  const burn = a.D1 >= 4 ? (mean([a.B1, a.B2]) <= 2.5 ? 'both' : 'exhaust') : a.D1 <= 2 ? 'low' : 'mid';
+  return { motive, eff, effLv, flow, burn };
+}
+// LOGIC-END
+
+const GROUPS = {
+  feel: { t: '仕事そのものへの気持ち', n: '報酬や肩書きを抜きにして、作業そのものをどう感じるかを答えてください。' },
+  view: { t: '見え方と現実', n: 'この仕事に惹かれる理由と、現実をどこまで知っているかを確かめます。' },
+  body: { t: '続けたときの心と体', n: '最近の状態を思い浮かべて答えてください。' },
+  skill: { t: '成果と周囲の評価', n: '自分の感覚と、周りからの見え方の両方を聞きます。' }
+};
+const QUADS = {
+  1: { no: '①', name: '天職・自己実現', cls: 'q1' },
+  2: { no: '②', name: '頼れる実力・要調整', cls: 'q2' },
+  3: { no: '③', name: '好奇心と伸びしろ', cls: 'q3' },
+  4: { no: '④', name: '別領域への合図', cls: 'q4' }
+};
+const VARIANTS = {
+  'q1': {
+    head: '自然に力が出ている領域',
+    body: '関心が内側から湧いていて、成果も出せている状態です。工夫が続きやすく、経験が積み上がるほど強みになりやすい組み合わせです。',
+    freud: '本人の関心(衝動)と、現実の役割が摩擦なく一致している状態と読める場合があります。',
+    maslow: '外からの評価より、内側の動機で動く「自己実現」に近い状態の可能性があります。',
+    actions: ['この仕事の中で一番没頭できる場面を3つ書き出し、その比率を増やす。', '今の強みを人に教える機会をつくり、再現できる形に言葉にする。', '楽しさに任せて休息が後回しになっていないか、週に一度点検する。']
+  },
+  'q1-drain': {
+    head: '天職に近いが、エネルギー消費が高めの領域',
+    body: '関心も力もある一方で、心身のエネルギーを多く使っている状態です。仕事内容そのものよりも、業務量・人間関係・裁量といった環境要因を整えることで、より長く力を発揮しやすくなります。',
+    freud: 'やりたい気持ちが強いぶん、「もっと期待に応えたい」という内側の意欲が高まっている可能性があります。',
+    maslow: '自己実現に向かう一方で、休養や安心といった土台のケアを優先したいタイミングです。',
+    actions: ['エネルギーを多く使う場面を「仕事の内容」と「環境要因(量・人・締切)」に分けて整理する。', '環境面の課題は、業務量や役割分担を相談・調整するための材料にする。', 'リフレッシュや休息の時間を、あらかじめ週のスケジュールに確保する。']
+  },
+  'q2-hot': {
+    head: '余白と充電を最優先にしたい領域',
+    body: '確かな実力と周囲からの高い評価がある一方、エネルギー消費が大きく出ている状態です。頼りにされるからこそ頑張りすぎていないか、心身の余白を整えることが推奨されます。',
+    freud: '「期待に応えたい」という誠実な責任感が強く、自分の休息や本音が後回しになっている可能性があります。',
+    maslow: '周囲への貢献や評価を大切にしている段階です。まずは休息や安心感を補給することで、新たな意欲が湧きやすくなります。',
+    actions: ['「続けている理由」を書き出し、今本当に大切にしたい優先順位と照らし合わせる。', '信頼できる人や上司に、担当量や役割の分担について相談してみる。', '疲れや緊張が続いている場合は、無理せず十分な休養や専門家への相談を検討する。']
+  },
+  'q2-calm': {
+    head: '力はあるが、次の関心を探す領域',
+    body: '成果は安定して出せていますが、仕事への純粋な関心は落ち着いています。心身の負担は少ないため、培ったスキルを土台にしながら、次にワクワクできる分野へ活動を広げていける段階です。',
+    freud: '現在の役割には十全に応えつつ、知的好奇心や関心は新しい対象に向き始めている可能性があります。',
+    maslow: '安定や承認といった基盤がしっかり整っており、次の自己実現や探求を探す好機と言えます。',
+    actions: ['培ったスキルを応用できそうな、隣接する職種や興味のある分野を3つ挙げてみる。', '業務の中で少しでも工夫や面白さを感じられる工程を探し、その比率を広げてみる。', '数か月後に再診断し、気持ちや関心の変化を定点観測してみる。']
+  },
+  'q3-dream': {
+    head: '理想に惹かれ、解像度を高める領域',
+    body: '仕事の魅力やビジョンに強く惹かれている状態です。憧れは素晴らしい推進力になりますので、現場の具体的な日常や実態を知ることで、より確かな一歩へつなげていけます。',
+    freud: '「こうありたい」という素敵な理想像が、好奇心を前向きに牽引している状態です。',
+    maslow: '新しい居場所や自己成長を目指す意欲が活発に動いている段階です。',
+    actions: ['その仕事の実務に詳しい人に、1日のリアルな業務フローや地味な作業について聞いてみる。', '短期間の体験学習や小さな実践を通じて、作業そのものの感触を確かめてみる。', '「肩書や見え方に関係なく、この作業自体が好きか」をじっくり味わってみる。']
+  },
+  'q3-grow': {
+    head: '伸びしろとポテンシャルのある領域',
+    body: '仕事への関心が高く、練習や経験を通じて上達できる手応えもしっかりあります。今はスキルの獲得段階であり、取り組み次第で大きな飛躍が期待できます。',
+    freud: '内発的なワクワクが原動力となっており、現実の能力をそこへ引き上げていく理想的な成長段階です。',
+    maslow: '成長や自己実現に向かって、意欲的に階段を登っている状態です。',
+    actions: ['目指す水準に必要なスキルを3つに細分化し、1つずつ集中して習得する。', '定期的な実践・学習の時間を確保し、小さなアウトプットを他者に見せてフィードバックをもらう。', 'つまずきを感じたときは「知識」「経験量」「進め方」のどこに要因があるか客観的に整理する。']
+  },
+  'q3-mismatch': {
+    head: '関心が高く、活かし方を工夫したい領域',
+    body: '分野への興味は強いものの、現在の進め方では手応えを得にくく感じている状態です。同じ分野でも役割や関わり方を変えることで、持ち前の関心をよりスムーズに成果へつなげられる可能性があります。',
+    freud: '関心の向かう先と、今求められている具体的な作業プロセスの間で、マッチングの調整が必要な状態です。',
+    maslow: '手応えや成果を通じた達成感を得るために、アプローチの工夫を探る段階です。',
+    actions: ['どの具体的な工程で難しさを感じているかを細かく書き出す。', 'その工程を分担・回避しつつ、自分の関心を活かせる「隣のポジション」や役割を探す。', 'まずは副業・趣味・勉強など、リスクの小さい形で関わりを深めてみる。']
+  },
+  'q3-open': {
+    head: '探求とトライアルの領域',
+    body: '仕事への関心が高く、これからの成長を探る段階です。適性や可能性を見極めるためにも、まずは小さな実践を重ねて感触を掴んでいくのが効果的です。',
+    freud: '好奇心が芽生えており、現実の業務との相性をこれから確かめていくフレッシュな状態です。',
+    maslow: '新しい挑戦を通じて、自分の力や可能性を試したいという意欲が動いています。',
+    actions: ['小さなミニ課題やプロジェクトで試し、上達のペースや心地よさを記録する。', 'その分野に詳しい人や先輩にアウトプットを見てもらい、客観的な助言をもらう。', '数か月後に再診断を行い、手応えの推移を確認する。']
+  },
+  'q4-recover': {
+    head: '環境やアプローチを見直せる領域',
+    body: '現時点では関心・手応えともに控えめですが、改善できる余地や可能性は感じられています。過去の環境や進め方の影響もあるため、アプローチを変えることで状況が好転する余地があります。',
+    freud: 'これまでの負担やつまずきから自分を守るため、自然と慎重になっている状態です。',
+    maslow: 'まずは安心できる環境や余白を確保し、無理のないペースを取り戻すことが優先されます。',
+    actions: ['難しさを感じる要因が「業務内容」「環境・人間関係」「過去の経験」のどこにあるか整理する。', '必要な業務は必要最小限の負担で進められるよう、仕組みや手順をシンプルにする。', 'より関心を持てる別の領域や得意分野に、エネルギーを配分することを検討する。']
+  },
+  'q4-none': {
+    head: '別の強みや環境に目を向ける好機',
+    body: '現在の職務内容とは関心・手応えともに自然な距離感があります。これは個人の能力不足ではなく、単に「持ち味が活きる土俵が他にある」というサインです。',
+    freud: '合わない環境からエネルギーを守り、より適した場所へ向かうための健全な防衛反応と読めます。',
+    maslow: '心身のゆとりや安心を保ちながら、自分の持ち味が輝く別の選択肢を探す好機です。',
+    actions: ['この仕事に注ぐエネルギーを適正化し、よりフィットする選択肢への移行を具体的に検討する。', '自分が自然と夢中になれることや、苦にならずできることを3つ書き出し、そちらへ軸足を移す。', '現在の環境に留まる必要がある場合は、期間や目標を定めて無理のない関わり方を維持する。']
+  }
+};
+const GAPS = {
+  supported: ['チームの支援を活かせている状態', '周囲のサポートを上手に受け取って成果を出せています。自立して進める場面と周囲を頼る場面を整理すると、環境が変わっても安定して力を発揮できます。'],
+  blind: ['周囲が認める「隠れた強み」', '自分では当たり前・普通と思っていることが、周囲からは高く評価されている可能性があります。具体的にどんな点が助かっているか尋ねてみると、新たな自信につながります。'],
+  overself: ['アピールや見せ方に伸びしろがある状態', '実感している手応えに対して、周囲への伝わり方にまだ余地がある状態です。成果の共有方法や期待値との擦り合わせを工夫すると、より正当な評価につながります。'],
+  outer: ['ステータスや影響力への憧れが原動力', '社会的な見え方や肩書も魅力的なモチベーションの1つです。業務そのものへの小さな面白さも同時に見つけていくと、より長く意欲が続きます。'],
+  image: ['理想のビジョンに惹かれている段階', '仕事の魅力や理想像がしっかり見えています。現場の具体的な日常や地味な作業プロセスを知ることで、関心の解像度がさらに高まります。'],
+  duty: ['責任感と誠実さが大きな強み', '「期待に応えたい」「役割を果たしたい」という誠実さが行動を力強く支えています。そこに「自分自身のやりたいこと」を少しずつ重ねていけると理想的です。']
+};
+const JOH = {
+  open: ['開放: 強みが共有されています', '自分も周囲も、力があると認識している状態です。強みを活かす場面を増やしやすい状態です。'],
+  blind: ['盲点: 周囲だけが強みを知っています', '周囲は力を認めているのに、自分は強みと感じていない状態です。自分の力を過小評価している可能性があります。'],
+  hidden: ['秘密: 自分だけが強みと感じています', '自分では力があると感じていても、周囲にはまだ伝わっていない状態です。成果の見せ方で変わる可能性があります。'],
+  unknown: ['未知: まだ誰も強みと認識していません', '自分にも周囲にも、強みとして見えていない状態です。環境や役割を変えると、見え方が変わる可能性があります。']
+};
+const FREUD_DOM = {
+  es: 'エス(本能・欲求)が優勢です。やりたい気持ちが行動を引っ張っている可能性があります。',
+  ego: '自我(現実との調整)が優勢です。現実を見ながら折り合いをつけて動いている可能性があります。',
+  sup: '超自我(義務・規範)が優勢です。「こうあるべき」という内側の声が行動を支えている可能性があります。',
+  none: 'どの働きも際立っていません。動機の出どころは、まだ見えにくい状態です。'
+};
+const PSY = {
+  motive: {
+    int: ['動機が内側にあります(内発的動機づけ)', '仕事そのものが面白いから続けている、という形に近い回答です。自己決定理論では、この状態は長く続きやすく、取り組みの質も上がりやすいとされます。'],
+    intro: ['期待に応える責任感が動機を支えています(取り入れ的調整)', '周囲の期待に応えたい気持ちや責任感が原動力になっている状態です。誠実に取り組める一方で負荷もかかりやすいため、「自分がどうしたいか」の余白を少しずつ増やすとより楽になります。'],
+    ext: ['動機が外側にあります(外的調整)', '肩書き、評価、報酬といった外からの条件が主な理由になっている回答です。条件が変わると意欲も変わりやすいため、作業そのものへの関心が後から育つ余地があるかを確かめる価値があります。'],
+    mix: ['動機の出どころが、はっきりしていません', '関心・肩書き・責任感のどれも決め手になっていません。「この仕事を続ける一番の理由は何か」を言葉にしてみると、位置が見えてきます。']
+  },
+  eff: {
+    high: ['「やればできる」という見通しがあります', '自己効力感は、成功体験、周囲からの評価や励まし、自力でやり遂げた実感から育つとされます。今の回答では、その材料がそろっている可能性があります。'],
+    mid: ['見通しは、まだ揺れています', '成功体験や周囲の評価が、部分的にしか積み上がっていない可能性があります。小さな成功を意図して増やすと、手応えが変わりやすい段階です。'],
+    low: ['「やれる」という見通しが弱い可能性があります', '自己効力感が低いと、実際より難しく感じて避けやすくなるとされます。能力そのものとは別の問題かもしれないので、小さな課題で成功を積んで確かめる価値があります。']
+  },
+  flow: {
+    flow: ['没頭しやすい条件がそろっています', '没頭と力の高さが重なっています。挑戦の難しさが力に合っているとき、人は我を忘れて没頭する状態(フロー)に入りやすいとされます。'],
+    anxiety: ['挑戦が力を上回っている可能性があります', '惹かれて没頭したい気持ちはあるのに、力が追いついていない回答です。難しさが力を上回ると、緊張や不安につながりやすいとされます。課題を小さく区切ると近づきやすくなります。'],
+    bore: ['力が挑戦を上回っている可能性があります', '力は高いのに、没頭は起きていません。課題が易しすぎると退屈になりやすいとされます。難度や裁量を上げる余地があるかもしれません。'],
+    none: ['没頭と力のあいだに、目立つ偏りはありません', '没頭しやすさと力の組み合わせからは、特定のパターンは見えませんでした。']
+  },
+  burn: {
+    both: ['エネルギーの十分な充電を優先したい状態です', '日々のエネルギー消費が大きく、達成感を感じにくくなっている可能性があります。まずは心身の休養と余白づくりを最優先にし、無理のないペースを整えることが推奨されます。'],
+    exhaust: ['エネルギーをしっかり補給したいタイミングです', '日々の業務に全力で向き合っているぶん、気力の消費が大きくなっています。達成感は保たれているため、休息時間の確保や担当量の調整でより心地よいリズムを取り戻せます。'],
+    mid: ['エネルギーバランスは概ね保たれています', '適度にエネルギーを使いながら進められています。週に数回はしっかりリフレッシュできる時間を確保し、好調を維持しましょう。'],
+    low: ['エネルギーに十分なゆとりがあります', '業務後にも気力や余白がしっかり残っている良好な状態です。この心地よいペースを保つことが、長く活躍するための土台になります。']
+  }
+};
+const SAMPLES = [
+  { name: '例: データ分析', a: { A1: 5, A2: 5, A3: 4, E1: 2, R1: 4, D1: 2, D2: 1, D3: 1, B1: 4, B2: 4, B3: 4, B4: 4 } },
+  { name: '例: 法人営業', a: { A1: 2, A2: 1, A3: 2, E1: 3, R1: 4, D1: 5, D2: 5, D3: 4, B1: 4, B2: 5, B3: 4, B4: 3 } },
+  { name: '例: ゲームクリエイター', a: { A1: 5, A2: 4, A3: 4, E1: 5, R1: 1, D1: 2, D2: 2, D3: 1, B1: 2, B2: 1, B3: 2, B4: 3 } },
+  { name: '例: 経理', a: { A1: 1, A2: 2, A3: 1, E1: 2, R1: 3, D1: 4, D2: 3, D3: 4, B1: 1, B2: 2, B3: 1, B4: 2 } }
+];
+const SCALE = ['全く当てはまらない', 'あまり当てはまらない', 'どちらとも言えない', 'やや当てはまる', 'とても当てはまる'];
+const STORE = 'tekishoku-no-mado:v1';
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const smooth = (() => { try { return matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'; } catch (e) { return 'auto'; } })();
+const state = { results: [], active: -1, sampleIdx: 0 };
+
+function save() { try { localStorage.setItem(STORE, JSON.stringify(state.results)); } catch (e) {} }
+function load() {
+  try {
+    const raw = localStorage.getItem(STORE);
+    if (!raw) return;
+    const arr = JSON.parse(raw);
+    if (Array.isArray(arr)) state.results = arr.filter(r => r && r.answers && QUESTIONS.every(q => r.answers[q.id] >= 1 && r.answers[q.id] <= 5)).slice(-5);
+  } catch (e) {}
+}
+
+/* ---------- shared layer pieces (intro model and result) ---------- */
+function layerBox(n, title, badge, inner) {
+  return `<section class="layer l${n}"><div class="lhead"><h3>${title}</h3><span class="lbadge">${badge}</span></div>${inner}</section>`;
+}
+function johariHTML(active) {
+  const cells = [['open', '開放', '自分も他者も知っている'], ['blind', '盲点', '他者は知っている'], ['hidden', '秘密', '自分だけが知っている'], ['unknown', '未知', 'まだ誰も知らない']];
+  return `<div class="johari">${cells.map(([k, n, c]) => `<div class="jc${active === k ? ' on' : ''}"><b>${n}</b><small>${c}</small>${active === k ? '<span class="here">いまの位置</span>' : ''}</div>`).join('')}</div>`;
+}
+function freudHTML(vals, dom) {
+  const cells = [['es', 'エス', '本能・欲求'], ['ego', '自我', '現実との調整'], ['sup', '超自我', '義務・規範']];
+  return `<div class="freud">${cells.map(([k, n, c]) => `<div class="fc${dom === k ? ' on' : ''}"><b>${n}</b><small>${c}</small>${vals ? `<span class="fv">${vals[k]}</span>` : ''}${dom === k ? '<span class="here">優勢</span>' : ''}</div>`).join('')}</div>`;
+}
+function pyramidHTML(levels) {
+  const rows = [['self', '自己実現', '58%'], ['esteem', '承認', '72%'], ['belong', '所属', '84%'], ['safety', '安全', '93%'], ['physio', '生理', '100%']];
+  return `<div class="pyr">${rows.map(([k, n, w]) => `<div class="${levels.includes(k) ? 'on' : ''}" style="--w:${w}">${n}</div>`).join('')}</div>`;
+}
+function renderModel() {
+  $('#model').innerHTML = `<p class="eyebrow">診断の構造</p>
+    ${layerBox(1, '第1層:ジョハリの窓', '認識', johariHTML(null))}
+    <div class="arrow" aria-hidden="true">↓</div>
+    ${layerBox(2, '第2層:フロイト', '動機', freudHTML(null, null))}
+    <div class="arrow" aria-hidden="true">↓</div>
+    ${layerBox(3, '第3層:マズロー', '欲求', pyramidHTML([]))}
+    <div class="arrow" aria-hidden="true">↓</div>
+    <section class="layer l4"><p class="out-title">CAREER OUTPUT</p><p class="out-sub">適職・環境・キャリアの処方箋</p></section>`;
+}
+
+/* ---------- form ---------- */
+function renderForm() {
+  const order = ['feel', 'view', 'body', 'skill'];
+  $('#qs').innerHTML = order.map(g => {
+    const items = QUESTIONS.filter(q => q.g === g);
+    return `<section class="group"><h3>${GROUPS[g].t}</h3><p class="gnote">${GROUPS[g].n}</p>
+      <div class="scale-hint"><span>1 当てはまらない</span><span>5 とても当てはまる</span></div>
+      <div style="margin-top:8px">${items.map(q => `<fieldset class="q" id="f-${q.id}"><legend>${esc(q.t)}</legend>
+        <div class="scale">${[1, 2, 3, 4, 5].map(v => `<label title="${SCALE[v - 1]}"><input type="radio" id="${q.id}-${v}" name="${q.id}" value="${v}" aria-label="${v} ${SCALE[v - 1]}"><span>${v}</span></label>`).join('')}</div>
+      </fieldset>`).join('')}</div></section>`;
+  }).join('');
+}
+function readAnswers() {
+  const a = {}, missing = [];
+  QUESTIONS.forEach(q => {
+    const c = document.querySelector(`input[name="${q.id}"]:checked`);
+    if (c) a[q.id] = +c.value; else missing.push(q.id);
+  });
+  return { a, missing };
+}
+function updateProgress() {
+  const n = QUESTIONS.length - readAnswers().missing.length;
+  $('#pcount').textContent = `${n} / ${QUESTIONS.length}`;
+  $('#pbar').style.width = (n / QUESTIONS.length * 100) + '%';
+}
+function resetForm() {
+  $('#jobName').value = '';
+  document.querySelectorAll('#qs input:checked').forEach(i => { i.checked = false; });
+  document.querySelectorAll('.q.missing').forEach(n => n.classList.remove('missing'));
+  $('#msg').textContent = '';
+  updateProgress();
+}
+function fillSample() {
+  const s = SAMPLES[state.sampleIdx % SAMPLES.length];
+  state.sampleIdx++;
+  $('#jobName').value = s.name;
+  QUESTIONS.forEach(q => { const el = document.getElementById(`${q.id}-${s.a[q.id]}`); if (el) el.checked = true; });
+  document.querySelectorAll('.q.missing').forEach(n => n.classList.remove('missing'));
+  $('#msg').textContent = 'サンプルの回答を入れました。内容は自由に変えられます。';
+  updateProgress();
+}
+
+/* ---------- result pieces ---------- */
+function short(n) { const c = [...n]; return c.length > 8 ? c.slice(0, 8).join('') + '…' : n; }
+
+function radarSVG(axes, quad) {
+  const cx = 230, cy = 185, R = 118;
+  const pt = (i, r) => { const g = (-90 + 60 * i) * Math.PI / 180; return [cx + r * Math.cos(g), cy + r * Math.sin(g)]; };
+  const pts = f => axes.map((a, i) => pt(i, R * f(a) / 100).map(n => n.toFixed(1)).join(',')).join(' ');
+  const qc = `--qc:var(--${QUADS[quad].cls})`;
+  let s = `<svg viewBox="0 0 460 370" role="img" aria-label="6つのスコア: ${axes.map(a => a.label + ' ' + a.v).join('、')}">`;
+  [20, 40, 60, 80, 100].forEach(g => { s += `<polygon class="rgrid" points="${pts(() => g)}"/>`; });
+  axes.forEach((a, i) => { const [x, y] = pt(i, R); s += `<line class="raxis" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`; });
+  s += `<polygon class="rarea" style="${qc}" points="${pts(a => a.v)}"/>`;
+  axes.forEach((a, i) => { const [x, y] = pt(i, R * a.v / 100); s += `<circle class="rvtx" style="${qc}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5"/>`; });
+  const anchor = ['middle', 'start', 'start', 'middle', 'end', 'end'];
+  axes.forEach((a, i) => {
+    const [x, y] = pt(i, R + 16);
+    const dy = i === 0 ? -6 : i === 3 ? 16 : 5;
+    const dx = anchor[i] === 'start' ? 4 : anchor[i] === 'end' ? -4 : 0;
+    s += `<text class="rl" x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${anchor[i]}">${a.label}</text>`;
+  });
+  return s + '</svg>';
+}
+function mapSVG(list, active) {
+  const X = v => 40 + v * 3.6, Y = v => 400 - v * 3.6;
+  const lo = 50 - BAND, hi = 50 + BAND;
+  let s = `<svg viewBox="0 0 420 440" role="img" aria-label="やりたい度とできる度を縦横にとった、4つの象限の地図">`;
+  s += `<rect class="pane p2" x="40" y="40" width="180" height="180"/><rect class="pane p1" x="220" y="40" width="180" height="180"/>`;
+  s += `<rect class="pane p4" x="40" y="220" width="180" height="180"/><rect class="pane p3" x="220" y="220" width="180" height="180"/>`;
+  s += `<rect class="band" x="${X(lo)}" y="40" width="${X(hi) - X(lo)}" height="360"/><rect class="band" x="40" y="${Y(hi)}" width="360" height="${Y(lo) - Y(hi)}"/>`;
+  s += `<line class="mull" x1="220" y1="40" x2="220" y2="400"/><line class="mull" x1="40" y1="220" x2="400" y2="220"/>`;
+  s += `<rect class="frame" x="40" y="40" width="360" height="360" fill="none"/>`;
+  s += `<text class="ql" x="52" y="64">② 頼れる実力・要調整</text><text class="ql" x="388" y="64" text-anchor="end">① 天職・自己実現</text>`;
+  s += `<text class="ql" x="52" y="386">④ 別領域への合図</text><text class="ql" x="388" y="386" text-anchor="end">③ 好奇心と伸びしろ</text>`;
+  s += `<text class="ax" x="40" y="426">← 関心が控えめ</text><text class="ax" x="400" y="426" text-anchor="end">やりたい・関心大 →</text>`;
+  s += `<text class="ax" transform="translate(20 400) rotate(-90)">← 伸びしろあり</text><text class="ax" transform="translate(20 40) rotate(-90)" text-anchor="end">できる・得意 →</text>`;
+  const order = list.map((r, i) => i).filter(i => i !== active).concat(active >= 0 ? [active] : []);
+  order.forEach(i => {
+    const d = diagnose(list[i].answers), x = X(d.want), y = Y(d.can), on = i === active;
+    const right = x > 290;
+    s += `<circle cx="${x}" cy="${y}" r="${on ? 10 : 7}" fill="var(--${QUADS[d.quad].cls})" stroke="var(--ink)" stroke-width="${on ? 3 : 1.5}"/>`;
+    s += `<text class="dlabel" x="${right ? x - 15 : x + 15}" y="${y + 4}" text-anchor="${right ? 'end' : 'start'}">${esc(short(list[i].name))}</text>`;
+  });
+  return s + '</svg>';
+}
+function scoreRow(label, val, warn) {
+  return `<div class="srow"><div class="sh"><span>${label}</span><span class="num">${val}/100</span></div><div class="track"><i class="${warn ? 'warn' : ''}" style="width:${val}%"></i></div></div>`;
+}
+function lens(theory, t, extra) {
+  return `<article class="card"><p class="eyebrow">${theory}</p><h4>${t[0]}</h4>${extra || ''}<p>${t[1]}</p></article>`;
+}
+function ladderHTML(motive) {
+  return `<ol class="ladder" aria-label="動機づけの段階">${[['ext', '外的', '評価・肩書き'], ['intro', '取り入れ', '責任感・期待'], ['int', '内発', '関心・面白さ']].map(([k, l, s]) => `<li class="${motive === k ? 'on' : ''}"${motive === k ? ' aria-current="true"' : ''}><b>${l}</b><small>${s}</small></li>`).join('')}</ol>`;
+}
+function summaryText(r) {
+  const d = diagnose(r.answers), q = QUADS[d.quad], v = VARIANTS[d.variant], pf = profile(r.answers);
+  return [`【CAREER SELF-DISCOVERY】${r.name}`, `${q.no} ${q.name}型 / ${v.head}`, pf.axes.map(a => `${a.label} ${a.v}`).join(' / '), `エネルギー消費度 ${d.drain} / 伸びしろ ${d.growth}`,
+    ...(d.gaps.length ? ['ポイントの整理: ' + d.gaps.map(g => GAPS[g][0]).join(' / ')] : []), '次の一手:', ...v.actions.map(t => '・' + t)].join('\n');
+}
+
+function renderChips() {
+  $('#chips').innerHTML = state.results.map((r, i) => {
+    const d = diagnose(r.answers);
+    return `<button type="button" class="chip" data-i="${i}" aria-pressed="${i === state.active}" style="--qc:var(--${QUADS[d.quad].cls})"><span class="dot"></span>${esc(short(r.name))}</button>`;
+  }).join('');
+}
+function renderResult() {
+  const r = state.results[state.active];
+  if (!r) return;
+  const a = r.answers, d = diagnose(a), q = QUADS[d.quad], v = VARIANTS[d.variant], pf = profile(a), p = psych(a), jo = johari(a);
+  renderChips();
+  const qc = `--qc:var(--${q.cls})`;
+  const borderNote = d.border.length ? `<p class="note">${d.border.map(b => b === 'want' ? 'やりたい度' : 'できる度').join('と')}が境界ゾーン(50±${BAND})にあります。どちらの象限にも入りうるため、状況や気持ちの変化で位置が柔軟に動く可能性があります。</p>` : '';
+  const gaps = d.gaps.length
+    ? `<div class="gaplist">${d.gaps.map(g => `<div class="card"><h4>${GAPS[g][0]}</h4><p>${GAPS[g][1]}</p></div>`).join('')}</div>`
+    : `<p class="llead">自己評価・周囲の評価・動機のバランスがとても自然に調和しています。</p>`;
+
+  const hero = `<section class="hero" style="${qc}">
+      <p class="eyebrow">${esc(r.name)}</p>
+      <h2 class="rtitle">${q.name}型</h2>
+      <span class="qbadge">第${q.no === '①' ? 1 : q.no === '②' ? 2 : q.no === '③' ? 3 : 4}象限が優勢</span>
+      <p class="vlead">${v.head}</p>
+      <p>${v.body}</p>
+      ${borderNote}
+      <div class="figs">
+        <figure class="fig">${radarSVG(pf.axes, d.quad)}</figure>
+        <figure class="fig">${mapSVG(state.results, state.active)}<figcaption>うすい帯は境界ゾーン。大きい丸が、いま見ている仕事です。</figcaption></figure>
+      </div>
+      <h3>診断スコア</h3>
+      <div class="scores">${pf.axes.map(x => scoreRow(x.label, x.v, x.k === 'duty' && x.v >= 63)).join('')}
+        <p class="aux-h">補足の指標</p>
+        ${scoreRow('エネルギー消費度', d.drain, d.drain >= 63)}
+        ${scoreRow('伸びしろ(改善できる手応え)', d.growth)}
+      </div>
+    </section>`;
+
+  const l1 = layerBox(1, '第1層:ジョハリの窓', '認識', `
+      <p class="llead">自分が思う強みと、周囲が見ている強みの調和を確かめます。</p>
+      <div class="l-grid">${johariHTML(jo)}
+        <article class="card"><h4>${JOH[jo][0]}</h4><p>${JOH[jo][1]}</p>
+          <div class="pair"><span>自分の評価 <b>${d.self} / 5</b></span><span>周囲の評価 <b>${d.other} / 5</b></span></div></article>
+      </div>
+      <p class="sub">ポイントの整理</p>${gaps}`);
+  const l2 = layerBox(2, '第2層:フロイト', '動機', `
+      <p class="llead">心の3つの働きと、動機づけの理論から原動力を読みます。</p>
+      ${freudHTML(pf.freud, pf.dom)}
+      <article class="card"><p class="eyebrow">精神分析 / フロイト</p><h4>${FREUD_DOM[pf.dom]}</h4><p>${v.freud}</p></article>
+      <div class="cards2">
+        ${lens('自己決定理論 / デシ&ライアン', PSY.motive[p.motive], ladderHTML(p.motive))}
+        ${lens('フロー理論 / チクセントミハイ', PSY.flow[p.flow])}
+      </div>`);
+  const l3 = layerBox(3, '第3層:マズロー', '欲求', `
+      <p class="llead">いま動いていそうな欲求と、大切にしたい土台を階層で読みます。</p>
+      <div class="l-grid">${pyramidHTML(maslowLevels(d.variant))}
+        <article class="card"><p class="eyebrow">欲求階層説 / マズロー</p><h4>いま動いている欲求の候補</h4><p>${v.maslow}</p></article>
+      </div>
+      <div class="cards2">
+        ${lens('自己効力感 / バンデューラ', PSY.eff[p.effLv], scoreRow('自己効力感の材料(B1〜B4)', p.eff))}
+        ${lens('エネルギーバランス / マスラック研究ベース', PSY.burn[p.burn])}
+      </div>`);
+  const l4 = `<section class="layer l4"><div class="lhead"><h3>CAREER OUTPUT</h3><span class="lbadge">処方箋</span></div>
+      <p class="out-sub" style="text-align:left">適職・環境・キャリアの処方箋</p>
+      <ul class="actions">${v.actions.map(t => `<li>${t}</li>`).join('')}</ul></section>`;
+  const arrow = '<div class="arrow" aria-hidden="true">↓</div>';
+
+  $('#resultBody').innerHTML = `${hero}<div style="height:12px"></div>
+    <div class="model" style="margin-top:12px">${l1}${arrow}${l2}${arrow}${l3}${arrow}${l4}</div>
+    <div class="btnrow">
+      <button type="button" class="btn" id="addBtn">別の仕事も診断する</button>
+      <button type="button" class="btn ghost" id="copyBtn">結果をコピー</button>
+      <button type="button" class="btn ghost" id="clearBtn">すべて消して最初から</button>
+    </div>
+    <textarea id="copyarea" hidden readonly aria-label="コピー用の結果テキスト"></textarea>`;
+}
+function show(view) {
+  $('#viewForm').hidden = view !== 'form';
+  $('#viewResult').hidden = view !== 'result';
+  window.scrollTo(0, 0);
+}
+
+document.addEventListener('change', e => { if (e.target.closest('#qs')) updateProgress(); });
+$('#startBtn').addEventListener('click', () => { $('#form').scrollIntoView({ behavior: smooth, block: 'start' }); $('#jobName').focus({ preventScroll: true }); });
+$('#sampleBtn').addEventListener('click', fillSample);
+$('#form').addEventListener('submit', e => {
+  e.preventDefault();
+  const { a, missing } = readAnswers();
+  document.querySelectorAll('.q.missing').forEach(n => n.classList.remove('missing'));
+  if (missing.length) {
+    missing.forEach(id => $('#f-' + id).classList.add('missing'));
+    $('#msg').textContent = `未回答が${missing.length}問あります。色のついた設問に答えてください。`;
+    $('#f-' + missing[0]).scrollIntoView({ behavior: smooth, block: 'center' });
+    return;
+  }
+  const name = $('#jobName').value.trim() || `仕事${state.results.length + 1}`;
+  state.results.push({ name, answers: a });
+  if (state.results.length > 5) state.results.shift();
+  state.active = state.results.length - 1;
+  save();
+  renderResult();
+  show('result');
+});
+$('#chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip');
+  if (!b) return;
+  state.active = +b.dataset.i;
+  renderResult();
+});
+$('#resultBody').addEventListener('click', e => {
+  const id = e.target.id;
+  if (id === 'addBtn') { resetForm(); show('form'); }
+  if (id === 'clearBtn') { state.results = []; state.active = -1; save(); resetForm(); show('form'); }
+  if (id === 'copyBtn') {
+    const text = summaryText(state.results[state.active]);
+    const ta = $('#copyarea');
+    const fallback = () => { ta.value = text; ta.hidden = false; ta.focus(); ta.select(); };
+    try {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalText = e.target.textContent;
+        e.target.textContent = 'コピーしました';
+        setTimeout(() => { e.target.textContent = originalText; }, 2000);
+      }, fallback);
+    } catch (err) { fallback(); }
+  }
+});
+
+renderModel();
+renderForm();
+updateProgress();
+load();
+if (state.results.length) { state.active = state.results.length - 1; renderResult(); show('result'); }
+</script>
+
+</body></html>
